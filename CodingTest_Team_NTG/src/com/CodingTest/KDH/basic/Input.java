@@ -17,6 +17,7 @@ public class Input {
 			System.out.println(" )  ( ')");
 			System.out.println("(  /  )");
 			System.out.println(" \\(__)|");
+			
 	  }
 	
 }
