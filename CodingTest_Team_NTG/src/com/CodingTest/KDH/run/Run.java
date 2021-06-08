@@ -10,7 +10,10 @@ public class Run {
 		Input i = new Input();
 //		i.input01();
 //		i.input02();
-		i.input03();
+//		i.input03();
+//		i.input04();
+//		i.input05();
+		i.input06();
 		
 	}
 
