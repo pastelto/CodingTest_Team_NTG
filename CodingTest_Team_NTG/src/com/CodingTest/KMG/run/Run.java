@@ -1,6 +1,8 @@
 package com.CodingTest.KMG.run;
 import java.util.*;
+
 public class Run {
+
 
 	public static void main1(String[] args){
 		//백준 2557문제 
@@ -18,8 +20,8 @@ public class Run {
 		System.out.println(" )  ( ')");
 		System.out.println("(  /  )");
 		System.out.println(" \\(__)|");    
-		
-	}
+	}	
+
 	public static void main4(String[] args) {
 		//백준 10172문제 
     System.out.println("|\\_/|");
@@ -47,5 +49,5 @@ public class Run {
 	//	}    
 	}
 
-	
+
 }
