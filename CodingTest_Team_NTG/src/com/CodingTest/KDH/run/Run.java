@@ -1,20 +1,11 @@
 package com.CodingTest.KDH.run;
 
-import com.CodingTest.KDH.basic.Input;
-
 public class Run {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Input i = new Input();
-//		i.input01();
-//		i.input02();
-//		i.input03();
-//		i.input04();
-//		i.input05();
-		i.input06();
-		
+		System.out.println("testing for git-hub");
 	}
 
 }
