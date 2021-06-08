@@ -9,6 +9,7 @@ public class Cat {
 		System.out.println("(  /  )");
 		System.out.println(" \\(__)|");
 
+
 	}
 
 }
