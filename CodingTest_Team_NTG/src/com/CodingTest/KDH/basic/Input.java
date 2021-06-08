@@ -30,7 +30,7 @@ public class Input {
 			System.out.println("||_/=\\\\__|");
 	  }
 	
-	  public void input05() {
+	  public void input05() { 
 			  	Scanner sc = new Scanner(System.in);
 			  	int a = sc.nextInt();
 			  	int b = sc.nextInt();
