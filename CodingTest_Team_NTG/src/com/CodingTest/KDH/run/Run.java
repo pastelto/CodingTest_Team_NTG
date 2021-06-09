@@ -6,6 +6,8 @@ public class Run {
 		// TODO Auto-generated method stub
 
 		System.out.println("testing for git-hub");
+		System.out.println("testing 2");
+		System.out.println("testing 3");
 	}
 
 }
