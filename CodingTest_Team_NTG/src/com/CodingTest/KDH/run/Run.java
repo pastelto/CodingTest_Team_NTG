@@ -9,6 +9,8 @@ public class Run {
 		
 		Input i = new Input();
 		i.input08();
+		
+		System.out.println("Merge Complete");
 	
 
 
