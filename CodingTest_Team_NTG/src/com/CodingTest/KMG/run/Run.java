@@ -1,4 +1,4 @@
-package com.CodingTest.KDH.run;
+package com.CodingTest.KMG.run;
 
 public class Run {
 
