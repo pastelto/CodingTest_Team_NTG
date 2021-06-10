@@ -1,4 +1,4 @@
-package com.CodingTest.KHY.baekjoon;
+package com.CodingTest.KHY.baekjoon.step01;
 
 import java.util.Scanner;
 
@@ -72,5 +72,35 @@ public class Step01{
 		System.out.println(a*b);
 		System.out.println(a/b);
 		System.out.println(a%b);
+	}
+	//2021-06-10
+	public void test10() {
+		Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		
+		System.out.println((a+b)%c);
+		System.out.println(((a%c)+(b%c))%c);
+		System.out.println((a*b)%c);
+		System.out.println(((a%c)*(b%c))%c);
+	}
+	public void test11() {
+		Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		sc.nextLine();
+		String b = sc.nextLine();
+		
+		int b1 = Character.getNumericValue(b.charAt(0));
+		int b2 = Character.getNumericValue(b.charAt(1));
+		int b3 = Character.getNumericValue(b.charAt(2));
+		
+		System.out.println(a*b3);
+		System.out.println(a*b2);
+		System.out.println(a*b1);
+		System.out.println(a*Integer.parseInt(b));
+		
 	}
 }
