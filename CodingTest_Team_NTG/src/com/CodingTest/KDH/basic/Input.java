@@ -85,4 +85,33 @@ public class Input {
 			System.out.println(a/b);
 			System.out.println(a%b); 
 	  }
+	  
+	  public void input10() {
+		  
+		  Scanner sc = new Scanner(System.in);
+		  int A = sc.nextInt();
+		  int B = sc.nextInt();
+		  int C = sc.nextInt();
+		  
+		  
+		  System.out.println((A+B)%C);
+		  System.out.println(((A%C) + (B%C))%C);
+		  System.out.println((A*B)%C);
+		  System.out.println(((A%C) * (B%C))%C);
+	  }
+	  
+	  public void input11() {
+		  
+		  Scanner sc = new Scanner(System.in);
+		  
+		  int a = sc.nextInt();
+		  int b = sc.nextInt();
+		  
+		  System.out.println(a*(b%10));
+		  System.out.println(a*(b/10%10));
+		  System.out.println(a*(b/100));
+		  
+		  System.out.println(a*b);
+		  
+	  }
 }
