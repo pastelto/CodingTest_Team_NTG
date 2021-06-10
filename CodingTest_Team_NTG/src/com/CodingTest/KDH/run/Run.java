@@ -8,9 +8,9 @@ public class Run {
 		// TODO Auto-generated method stub
 		
 		Input i = new Input();
-		i.input08();
-		
-		System.out.println("Merge Complete");
+//		i.input08();
+//		i.input10();
+		i.input11();
 	
 
 
