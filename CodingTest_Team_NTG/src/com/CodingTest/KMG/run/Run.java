@@ -30,6 +30,7 @@ public class Run {
     System.out.println("( 0 )\"\"\"\\");
     System.out.println("|\"^\"`    |");
     System.out.println("||_/=\\\\__|");
+
 	}
 	//import java.util.*;
 		//public class Main{
@@ -99,7 +100,8 @@ public class Run {
 		System.out.println(a * (b / 100));
 		System.out.println(a * b);
 		
-		
 	}
+	
+
 }
 
