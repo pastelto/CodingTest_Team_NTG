@@ -1,6 +1,6 @@
 package com.CodingTest.KHY.run;
 
-import com.CodingTest.KHY.baekjoon.Step01;
+import com.CodingTest.KHY.baekjoon.step01.Step01;
 
 public class Run {
 
@@ -15,7 +15,9 @@ public class Run {
 //		st01.test6();
 //		st01.test7();
 //		st01.test8();
-		st01.test9();
+//		st01.test9();
+//		st01.test10();
+		st01.test11();
 
 	}
 
