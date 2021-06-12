@@ -1,5 +1,6 @@
 package com.CodingTest.KDH.run;
 
+import com.CodingTest.KDH.basic.IF;
 import com.CodingTest.KDH.basic.Input;
 
 public class Run {
@@ -10,8 +11,11 @@ public class Run {
 		Input i = new Input();
 //		i.input08();
 //		i.input10();
-		i.input11();
+//		i.input11();
 	
+		IF i1 = new IF();
+//		i1.if02();
+		i1.if03();
 
 
 	}
