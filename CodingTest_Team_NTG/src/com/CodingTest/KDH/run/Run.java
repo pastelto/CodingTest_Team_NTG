@@ -21,8 +21,12 @@ public class Run {
 		
 		FOR f = new FOR();
 //		f.FOR01();
-		f.FOR02();
-
+//		f.FOR02();
+//		f.FOR03();
+//		f.FOR05();
+		f.FOR04();
+		
+		
 	}
 
 }
