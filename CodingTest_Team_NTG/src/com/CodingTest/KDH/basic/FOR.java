@@ -1,6 +1,12 @@
 package com.CodingTest.KDH.basic;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class FOR {
 
@@ -36,4 +42,54 @@ public class FOR {
 		}
 	}
 	
+	public void FOR03() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.nextInt();
+		int sum = 0;
+		
+		for(int i = 1; i <= num; i++){
+			
+			sum = sum + i;
+			
+		}
+			System.out.println(sum);
+	}
+	
+	public void FOR04() { // 다시 공부하기
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+		try {
+			int num= Integer.parseInt(br.readLine()); // 반복횟수
+
+			for (int i = 0; i < num; i++) {
+				int num1 = Integer.parseInt(br.readLine()); // 값1
+				int num2 = Integer.parseInt(br.readLine()); // 값2
+				bw.write((num1 + num2) + "\n"); 	
+			}
+
+			bw.close();
+
+		} catch (Exception e) {
+
+		}	
+ 
+	}
+		
+	
+	public void FOR05() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.nextInt();
+		
+		for(int i = 1; i <= num; i++) {
+			
+			System.out.println(i);
+		}
+	}
 }
+
