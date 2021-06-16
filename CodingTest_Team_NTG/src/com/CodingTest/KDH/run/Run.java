@@ -24,8 +24,9 @@ public class Run {
 //		f.FOR02();
 //		f.FOR03();
 //		f.FOR05();
-		f.FOR04();
-		
+//		f.FOR04();
+//		f.FOR06();
+		f.FOR07();
 		
 	}
 
