@@ -91,5 +91,41 @@ public class FOR {
 			System.out.println(i);
 		}
 	}
+	
+	public void FOR06() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num  = sc.nextInt();
+		
+		for(int i = num; i >= 1; i--) {
+			
+			System.out.println(i);
+		}
+	}
+	
+	public void FOR07() {
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.nextInt();
+		
+		for(int i = 1; i <= num; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			System.out.println("Case #" + i + ": " + (a+b) );
+		}
+	}
+	
+	public void FOR08() {
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.nextInt();
+		
+		for(int i = 1; i <= num; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			System.out.println("Case #" + i + ": " + a + " + " + b + " = "+ (a+b));
+		}
+	}
 }
 
