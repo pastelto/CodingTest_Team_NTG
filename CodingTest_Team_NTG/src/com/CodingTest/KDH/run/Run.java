@@ -2,6 +2,7 @@ package com.CodingTest.KDH.run;
 
 import java.io.IOException;
 
+import com.CodingTest.KDH.basic.Array;
 import com.CodingTest.KDH.basic.FOR;
 import com.CodingTest.KDH.basic.IF;
 import com.CodingTest.KDH.basic.Input;
@@ -37,7 +38,12 @@ public class Run {
 		WHILE w = new WHILE();
 //		w.W01();
 //		w.W02();
-		w.W03();
+//		w.W03();
+		
+		Array a = new Array();
+//		a.ARRAY01();
+//		a.ARRAY02();
+		a.ARRAY03();
 		
 	}
 
