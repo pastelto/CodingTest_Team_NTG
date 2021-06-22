@@ -1,12 +1,16 @@
 package com.CodingTest.KDH.run;
 
+import java.io.IOException;
+
+import com.CodingTest.KDH.basic.Array;
 import com.CodingTest.KDH.basic.FOR;
 import com.CodingTest.KDH.basic.IF;
 import com.CodingTest.KDH.basic.Input;
+import com.CodingTest.KDH.basic.WHILE;
 
 public class Run {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
 		Input i = new Input();
@@ -21,8 +25,26 @@ public class Run {
 		
 		FOR f = new FOR();
 //		f.FOR01();
-		f.FOR02();
-
+//		f.FOR02();
+//		f.FOR03();
+//		f.FOR05();
+//		f.FOR04();
+//		f.FOR06();
+//		f.FOR07();
+//		f.FOR09();
+//		f.FOR10();
+//		f.FOR11();
+		
+		WHILE w = new WHILE();
+//		w.W01();
+//		w.W02();
+//		w.W03();
+		
+		Array a = new Array();
+//		a.ARRAY01();
+//		a.ARRAY02();
+		a.ARRAY03();
+		
 	}
 
 }
