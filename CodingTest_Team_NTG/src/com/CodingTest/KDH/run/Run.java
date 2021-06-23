@@ -43,7 +43,9 @@ public class Run {
 		Array a = new Array();
 //		a.ARRAY01();
 //		a.ARRAY02();
-		a.ARRAY03();
+//		a.ARRAY03();
+//		a.ARRAY04();
+		a.ARRAY05();
 		
 	}
 
