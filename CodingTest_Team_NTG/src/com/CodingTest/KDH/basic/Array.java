@@ -62,14 +62,14 @@ public class Array {
 				arr[i] = Integer.parseInt(br.readLine());
 			}
 
-			for(int i=0; i<9; i++) {
-				if(max < arr[i]) { 
-					max = arr[i]; 
+			for (int i = 0; i < 9; i++) {
+				if (max < arr[i]) {
+					max = arr[i];
 					num = i + 1;
-					
-				} 
+
+				}
 			}
-			
+
 			bw.write("max : " + max);
 			bw.write("count : " + num);
 		} catch (NumberFormatException e1) {
@@ -83,9 +83,9 @@ public class Array {
 		bw.flush();
 		br.close();
 		bw.close();
-		
+
 	}
-	
+
 	public void ARRAY03() throws IOException {
 //		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -118,51 +118,50 @@ public class Array {
 //		br.close();
 //		bw.close();
 //	
-		
+
 		Scanner sc = new Scanner(System.in);
 
 		int num = (sc.nextInt() * sc.nextInt() * sc.nextInt());
 		String str = Integer.toString(num);
 
-		for(int i = 0; i < 10; i++ ) {
+		for (int i = 0; i < 10; i++) {
 			int count = 0;
-			for(int j = 0; j < str.length(); j++) {
-				if((str.charAt(j)-'0') == i) {
-					count ++;
+			for (int j = 0; j < str.length(); j++) {
+				if ((str.charAt(j) - '0') == i) {
+					count++;
 				}
 			}
 
 			System.out.println(count);
 		}
 	}
-	
-	
+
 	public void ARRAY04() { // X
-		
+
 		Scanner sc = new Scanner(System.in);
 		int[] arr = new int[10];
 		int count = 10;
 		int index = 0;
-		
-			for(int i = 0; i < 10; i++) {
-				int a = sc.nextInt();
-				arr[i] = a % 42;
-				System.out.println("arr[" + i + "] : " + arr[i]);
-		
+
+		for (int i = 0; i < 10; i++) {
+			int a = sc.nextInt();
+			arr[i] = a % 42;
+			System.out.println("arr[" + i + "] : " + arr[i]);
+
+		}
+
+		for (int j = 1; j < 10; j++) {
+			if (arr[index++] == arr[j]) {
+				count--;
 			}
-			
-			for(int j = 1; j < 10; j++) {
-				if(arr[index++] == arr[j]) {
-					count--;
-				}
-			}
-			
-			System.out.println(count);
+		}
+
+		System.out.println(count);
 
 	}
-	
+
 	public void ARRAY04_1() {
-		
+
 		Scanner sc = new Scanner(System.in);
 
 		int arr[] = new int[10]; // 10개의 값이 담기는 배열
@@ -170,37 +169,36 @@ public class Array {
 		String mod[] = new String[10]; // 나머지 값이 담기는 곳
 		ArrayList<String> list = new ArrayList<>();
 
-		for(int i = 0; i < arr.length; i++) {
-			arr[i] = sc.nextInt(); 
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = sc.nextInt();
 			mod[i] = Integer.toString(arr[i] % 42); // 42로 나눈 나머지
 		}
 
-		for(String rm : mod) { // 나머지 값이 담긴 길이만큼 돌림
-			if(!list.contains(rm)) { // 
+		for (String rm : mod) { // 나머지 값이 담긴 길이만큼 돌림
+			if (!list.contains(rm)) { //
 				list.add(rm);
 			}
 		}
 		System.out.println(list.size());
 	}
-	
+
 	public void ARRAY05() {
-		
+
 		Scanner sc = new Scanner(System.in);
-		
-		int num = sc.nextInt(); // 과목 수 
+
+		int num = sc.nextInt(); // 과목 수
 		int max = 0; // 최대값이 담길 곳
 		int n;
 		int count = 0;
 		double sum = 0;
 		double[] arr = new double[num]; // 성적이 담길 배열
 		double[] newScore = new double[num]; // 새로운 성적이 담길 곳
-		
-		
-		for(int i = 0; i < num; i++) {
-			
-			arr[i] = sc.nextInt(); // 성적이 담김	
+
+		for (int i = 0; i < num; i++) {
+
+			arr[i] = sc.nextInt(); // 성적이 담김
 		}
-		
+
 //		for (int j = 1; j < num; j++) { // 점수 중 최소~최대값 순으로 (2)
 //			for (int k = 0; k < j; k++) {
 //				if (arr[j] < arr[k]) {
@@ -210,48 +208,47 @@ public class Array {
 //				}
 //			}
 //		}
-		
+
 		Arrays.sort(arr); // 배열 순서대로 정리 (1)
-		
-		for(int k = 0; k < num; k++) {
+
+		for (int k = 0; k < num; k++) {
 //			System.out.println("arr : " + arr[count]);
-			newScore[k] = arr[count++]/arr[num-1]*100;
+			newScore[k] = arr[count++] / arr[num - 1] * 100;
 //			System.out.println("점수 " + newScore[k]);
 		}
-		
-		for(int i = 0; i < num; i++) {
+
+		for (int i = 0; i < num; i++) {
 			sum += newScore[i];
 //			System.out.println("sum : " + sum);
 		}
 //		System.out.println("sum : " + sum);
 //		System.out.println("num : " + num);
-		System.out.println(sum/num);
-		
+		System.out.println(sum / num);
+
 	}
-	
+
 	public void ARRAY06() {
 		Scanner sc = new Scanner(System.in);
-		
+
 		int num = sc.nextInt();
 		String[] arr = new String[num]; // 갯수만큼 배열크기 지정
 
-		for(int i = 0; i < arr.length; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.next(); // O 아니면 X
 		}
 
-		for(int i = 0; i < arr.length; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			int count = 0; // O가 연속으로 나오는 횟수
 			int sum = 0; // 누적점수
 
-			for(int j = 0; j <arr[i].length();j++) {
+			for (int j = 0; j < arr[i].length(); j++) {
 
-				if(arr[i].charAt(j) == 'O') {
+				if (arr[i].charAt(j) == 'O') {
 					count++; // O가 연속으로 나오면 count++;
-				}
-				else {
+				} else {
 					count = 0; // X가 나오면 count = 0 으로 다시 셋팅
 				}
-				sum += count; 
+				sum += count;
 			}
 
 			System.out.println(sum);
@@ -259,9 +256,35 @@ public class Array {
 
 	}
 
+	public void ARRAY07() {
+		Scanner sc = new Scanner(System.in);
 
+		int num = sc.nextInt(); // 테스트 케이스 수
+		int[] arr;
+
+		for (int i = 0; i < num; i++) {
+			int sNum = sc.nextInt(); // 학생 수
+			arr = new int[sNum];
+
+			double sum = 0;
+
+			for (int j = 0; j < sNum; j++) {
+				int score = sc.nextInt();
+				arr[j] = score;
+				sum += score;
+			}
+			
+			double avg = sum / sNum;
+			double student = 0;
+			for(int k = 0; k < sNum; k++) {
+				if(arr[k] > avg) {
+					student++;
+				}
+			}
+			double per = (student/sNum)*100;
+			System.out.printf("%.3f%%\n", per);
+		}
+
+
+	}
 }
-		
-		
-	
-
