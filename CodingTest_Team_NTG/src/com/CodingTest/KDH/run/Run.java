@@ -4,8 +4,10 @@ import java.io.IOException;
 
 import com.CodingTest.KDH.basic.Array;
 import com.CodingTest.KDH.basic.FOR;
+import com.CodingTest.KDH.basic.Function;
 import com.CodingTest.KDH.basic.IF;
 import com.CodingTest.KDH.basic.Input;
+import com.CodingTest.KDH.basic.STRING;
 import com.CodingTest.KDH.basic.WHILE;
 
 public class Run {
@@ -45,7 +47,15 @@ public class Run {
 //		a.ARRAY02();
 //		a.ARRAY03();
 //		a.ARRAY04();
-		a.ARRAY05();
+//		a.ARRAY05();
+//		a.ARRAY07();
+		
+		Function ft = new Function();
+//		ft.F01();
+		
+		STRING s = new STRING();
+//		s.s01();
+		s.s02();
 		
 	}
 
