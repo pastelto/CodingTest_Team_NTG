@@ -55,7 +55,9 @@ public class Run {
 		
 		STRING s = new STRING();
 //		s.s01();
-		s.s02();
+//		s.s02();
+//		s.s03();
+		s.s04();
 		
 	}
 
