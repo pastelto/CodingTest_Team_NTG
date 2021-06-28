@@ -1,6 +1,10 @@
 package com.CodingTest.KDH.basic;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class STRING {
 
@@ -57,19 +61,42 @@ public class STRING {
 		}
 	}
 
-	public void s05() { // NEED TO THINK MORE
+	public void s05() throws IOException { // NEED TO THINK MORE
 
-		Scanner sc = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		String str = sc.next().toUpperCase(); // 모두 대문자
+		int[] arr = new int[26]; // 알파벳 26개
+		String s = br.readLine().toUpperCase(); // 대문자 only
 
-		int[] alp = new int[26]; // 알파벳 갯수
-		int[] arr = new int[26];
-
-		for (int i = 0; i < alp.length; i++) { // a의 아스키 코드값을 빼주어 인덱스에 활용
-			if (65 <= str.charAt(i)) {
-				arr[str.charAt(i) - 97]++; // 해당 알파벳 등장 시 1개씩 증가
+		for (int i = 0; i < s.length(); i++) {
+			if ('A' <= s.charAt(i) && s.charAt(i) <= 'Z') { // 대문자 범위
+				arr[s.charAt(i) - 'A']++;
 			}
+
+			int max = -1;
+			char ch = '?';
+			for (int j = 0; j < 26; j++) {
+
+				if (arr[j] > max) {
+					max = arr[j];
+					ch = (char) (j + 65); // 대문자 출력 -> 65 더해줌
+				} else if (arr[j] == max) {
+					ch = '?';
+				}
+			}
+			System.out.print(ch);
 		}
+	}
+
+	public void s06() throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		StringTokenizer st = new StringTokenizer(br.readLine(), " "); // 입력받은 걸 공백으로 분리
+
+		br.close();
+
+		System.out.println(st.countTokens());
+
 	}
 }
