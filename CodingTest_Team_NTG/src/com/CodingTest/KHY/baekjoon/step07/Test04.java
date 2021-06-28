@@ -28,7 +28,7 @@ public class Test04 {
 
 			for (int j = 0; j < arr[i][1].length(); j++) {
 				for (int k = 0; k < Integer.parseInt(arr[i][0]); k++) {
-
+//					answer[i] += arr[i][1].charAt(j);
 					str += arr[i][1].charAt(j);
 				}
 			}
