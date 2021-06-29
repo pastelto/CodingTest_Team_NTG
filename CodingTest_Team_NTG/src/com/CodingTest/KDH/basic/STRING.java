@@ -99,4 +99,48 @@ public class STRING {
 		System.out.println(st.countTokens());
 
 	}
+
+	public void s07() throws IOException {
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//		String[] arr = br.readLine().split(" ");
+//		System.out.println(arr[0]);
+//		System.out.println(arr[1]);
+//
+////		int num1 = Integer.valueOf(arr[0]);
+////		int num2 = Integer.valueOf(arr[1]);
+//
+//		int[] rev = new int[2];
+//
+//		for (int i = 0; i < arr.length; i++) {
+//			String rNum = " ";
+//			if (!arr[i].isEmpty()) { // 빈 배열이 아니면,
+//				for (int j = 2; j <= 0; j--) {
+//					rNum += arr[i].charAt(j);
+//					System.out.println("1. " + arr[i].charAt(j));
+//					System.out.println("rev : " + rev[i]);
+//
+//				}
+////				rev[i] = Integer.valueOf(rNum);
+//				System.out.println("rNum : " + rNum);
+//			}
+//
+//		}
+//
+////		System.out.println(Math.max(rev[0], rev[1]));
+
+		Scanner sc = new Scanner(System.in);
+		String[] arr = new String[2];
+		String[] rArr = new String[2];
+
+		for (int i = 0; i < 2; i++) {
+			arr[i] = sc.next();
+			StringBuffer sb = new StringBuffer(arr[i]);
+			rArr[i] = sb.reverse().toString();
+		}
+
+		System.out.println(Math.max(Integer.valueOf(rArr[0]), Integer.valueOf(rArr[1])));
+
+	}
+
 }
