@@ -49,6 +49,7 @@ public class Run {
 //		a.ARRAY04();
 //		a.ARRAY05();
 //		a.ARRAY07();
+//		a.ARRAY03_1();
 		
 		Function ft = new Function();
 //		ft.F01();
@@ -60,7 +61,8 @@ public class Run {
 //		s.s04();
 //		s.s05();
 //		s.s06();
-		s.s07();
+//		s.s07();
+		s.s08();
 		
 	}
 

@@ -135,6 +135,30 @@ public class Array {
 			System.out.println(count);
 		}
 	}
+	
+	public void ARRAY03_1() {
+	     Scanner sc = new Scanner(System.in);
+
+			int num = (sc.nextInt() * sc.nextInt() * sc.nextInt());
+			String str = Integer.toString(num);
+			
+			int[] arr = new int[9];
+			
+			for(int i = 0; i < arr.length; i++) {
+				arr[i] = i;
+			}
+			
+			for(int i = 0; i < arr.length; i++ ) {
+				int count = 0;
+				for(int j = 0; j < str.length(); j++) {
+					if((str.charAt(j)-'0') == arr[i]) {
+						count ++;
+					}
+				}
+
+				System.out.println(count);
+			}
+	}
 
 	public void ARRAY04() { // X
 
