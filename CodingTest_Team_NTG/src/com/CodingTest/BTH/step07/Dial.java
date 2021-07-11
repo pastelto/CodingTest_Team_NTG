@@ -14,7 +14,7 @@ public class Dial {
 	        
 			int count=0;
 			int k = s.length();
-	        
+
 			for(int i = 0 ; i < k ; i++) {
 	        
 				switch(s.charAt(i)) {
