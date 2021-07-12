@@ -1,8 +1,10 @@
 package com.CodingTest.KDH.basic;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -193,6 +195,28 @@ public class STRING {
 		
 		}
 		System.out.println("time : " + time);
+	}
+	
+	public void s09() throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		String[] str = {"c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="};
+		String input = br.readLine().trim();
+		int result = 0;
+		int i;
+		for(i=0; i<str.length; i++) {
+			if(input.contains(str[i])) { 
+				input = input.replaceAll(str[i], "#"); 
+			}
+		}
+		result = input.length();
+		bw.write(result + "");
+		bw.flush();
+		br.close();
+		bw.close();
+
+		
+
 	}
 	
 }

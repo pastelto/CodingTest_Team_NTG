@@ -104,4 +104,70 @@ public class Step5 {
 		
 		
 	}
+	//백준 8958문제 
+	public static void main6(String args[]) throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder();
+		int test = Integer.parseInt(br.readLine());
+		String arr[] = new String[test];
+
+		for (int i = 0; i < test; i++) {
+			arr[i] = br.readLine();
+
+		}
+
+		for (int i = 0; i < test; i++) {
+			int cnt = 0;
+			int sum = 0;
+			for (int j = 0; j < arr[i].length(); j++) {
+				if (arr[i].charAt(j) == 'O') {
+					cnt++;
+				} else {
+					cnt = 0;
+
+				}
+				sum += cnt;
+			}
+			sb.append(sum).append('\n');
+		}
+		System.out.println(sb);
+
+	}
+	//백준 4344문제 
+	public static void main(String args[]) throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int[] arr;
+		int c = Integer.parseInt(br.readLine());
+		
+		StringTokenizer st;
+		
+		for(int i=0; i<c;i++) {
+			st = new StringTokenizer(br.readLine()," "); //학생 수 및 성적입력 
+			
+			int N = Integer.parseInt(st.nextToken());
+			arr = new int[N];
+			
+			double sum = 0; //성적 합계를 위한 변 
+			
+			for(int j =0; j<N;j++) {
+				int val = Integer.parseInt(st.nextToken());
+				arr[j] = val;
+				sum += val; //배열에 담아서 하나씩 더해 합계구하기. 
+			}
+			double avg = sum / N ;
+			double cnt = 0;
+		
+			for(int j = 0; j<N; j++) {
+				if(arr[j] > avg) {
+					cnt++;
+				}
+			}
+			System.out.printf("%.3f%%\n",(cnt/N)*100);
+		}
+		
+		
+		
+	}
 }
