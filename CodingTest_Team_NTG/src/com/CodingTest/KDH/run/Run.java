@@ -3,6 +3,7 @@ package com.CodingTest.KDH.run;
 import java.io.IOException;
 
 import com.CodingTest.KDH.basic.Array;
+import com.CodingTest.KDH.basic.Basic_Math;
 import com.CodingTest.KDH.basic.FOR;
 import com.CodingTest.KDH.basic.Function;
 import com.CodingTest.KDH.basic.IF;
@@ -62,7 +63,11 @@ public class Run {
 //		s.s05();
 //		s.s06();
 //		s.s07();
-		s.s08();
+//		s.s08();
+//		s.s10();
+		
+		Basic_Math bm = new Basic_Math();
+		bm.bm01();
 		
 	}
 

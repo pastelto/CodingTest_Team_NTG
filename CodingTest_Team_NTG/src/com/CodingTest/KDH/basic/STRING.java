@@ -219,4 +219,31 @@ public class STRING {
 
 	}
 	
-}
+	public void s10() throws NumberFormatException, IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	
+		int num = Integer.parseInt(br.readLine());
+		int count = num;
+
+		for(int i = 0; i < num; i++) {
+			String str = br.readLine();
+			boolean check[] = new boolean[26];
+
+			for(int j = 0; j < str.length()-1; j++) {
+				if(str.charAt(j) != str.charAt(j+1)) {
+					if(check[str.charAt(j+1)-97]==true) {
+						count--;
+						break;
+					}
+				}
+				check[str.charAt(j)-97]=true;
+			}
+		}
+		System.out.println(count);
+	}
+
+
+		
+	}
+	
