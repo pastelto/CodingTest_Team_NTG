@@ -39,7 +39,7 @@ public class Decimal {
 		
 	}
  
-	
+	//안녕하세요.
 	// 에라토스테네스 체 알고리즘 
 	public static void get_prime() {
 		prime[0] = true;
